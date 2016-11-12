@@ -4,16 +4,16 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="jumbotron">
     <div class="container">
-      <h1 class="post-title-main" itemprop="name headline">{{ page.title }}</h1>
-      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-      
+      <h1 class="post-title-main" itemprop="name headline">Welcome to DevOps</h1>
+      <center>
+        <h2 class="post-title-main">I'll be your guide, the Fat Dev Ninja</h2>
+      </center>
     </div>
-
-</div>
-
-
-  <div class="post-content container" itemprop="articleBody">
-    {{ content }}
   </div>
 
+  <div class="post-content container" itemprop="articleBody">
+    <h3>{{ page.title }}</h3>
+    {{ content }}
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </div>
 </article>

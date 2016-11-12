@@ -1,7 +1,8 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: post
+title:  "Welcome to DevOps"
+date:   2016-11-12 11:26:26 -0400
+categories: devops
 ---
 
 ### I'll be your guide, the Fat Dev Ninja.

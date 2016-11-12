@@ -21,9 +21,6 @@ layout: default
         <h3 class="post-title">
           <a class="post-title" href="{{post.url | prepend:site.baseurl }}" > {{ post.title }}</a>
         </h3>
-        <div class="post-excerpt">
-          {{ post.content | strip_html | truncatewords:50}}
-        </div>
         <div class="posted">
           posted on
           <span class="posted-on">
@@ -37,6 +34,9 @@ layout: default
             {{category}} &nbsp;{% if forloop.last %}{% else %},{% endif %}
             {% endfor %}
           </span>
+        </div>
+        <div class="post-excerpt">
+          {{ post.content }}
         </div>
       </div>
       {% endfor %}

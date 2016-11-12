@@ -12,3 +12,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/bundle
+  - Dockerfile
+  - Makefile
+  - script/cibuild
